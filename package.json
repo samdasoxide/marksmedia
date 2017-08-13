@@ -1,0 +1,24 @@
+{
+  "name": "marks-media-production",
+  "version": "1.0.0",
+  "description": "Portfolio of Mark's works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samdasoxide/marksmedia.git"
+  },
+  "author": "Sammy Ramdas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samdasoxide/marksmedia/issues"
+  },
+  "homepage": "https://github.com/samdasoxide/marksmedia#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
+  }
+}
