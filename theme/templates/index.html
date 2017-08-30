@@ -63,6 +63,24 @@
 {% endblock %}
 
 {% block grid %}
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Service</h2>
+                <hr class="star-primary">
+            </div>
+            <div class="col-lg-12">
+                {% for item in articles_page.object_list %}
+                    {% if item.type == 'service' %}
+                        <h4>{{ item.title }}</h4>
+                        <p>{{ item.content }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
@@ -79,26 +97,27 @@
             {% for article in articles_page.object_list %}
 
             <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal{{loop.index}}" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                <a href="#portfolioModal{{loop.index}}" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-plus fa-3x"></i>
                         </div>
-                        <img src="{{ SITEURL }}/images/portfolio/{{article.image}}" class="img-responsive" alt="">
-                    </a>
+                    </div>
+                    <img src="http://via.placeholder.com/350x250" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>{{ article.title }}</h4>
+                    <p class="text-muted">{{ article.category }}</p>
+                    <p>{{ article.object_list }}</p>
                 </div>
+            </div>
             {% endfor %}
         {% endif %}
 
         </div>
     </div>
 </section>
-
-
 {% endblock %}
-
-
 
 {% block contact %}
     <!-- Contact Section -->
@@ -132,15 +151,9 @@
                                     <p class="help-block text-danger"></p>
 
                                 {% endif %}
-
-
-
                                 </div>
                             </div>
-
                         {% endfor %}
-
-
                         <br>
                         <div id="success"></div>
                         <div class="row">
@@ -154,8 +167,6 @@
         </div>
     </section>
 {% endblock %}
-
-
 
 {% block modals %}
     {% if articles %}
@@ -174,7 +185,7 @@
                                 <div class="modal-body">
                                     <h2>{{article.title}}</h2>
                                     <hr class="star-primary">
-                                    <img src="{{ SITEURL }}/images/portfolio/{{article.image}}" class="img-responsive img-centered" alt="">
+                                    <img src="http://via.placeholder.com/350x250" class="img-responsive img-centered" alt="">
                                     <p>{{article.content}}</p>
                                     <ul class="list-inline item-details">
                                         <li>Client:
@@ -182,11 +193,11 @@
                                             </strong>
                                         </li>
                                         <!--
-<li>Date:
+                                        <li>Date:
                                             <strong><a href="http://startbootstrap.com">{{article.date}}</a>
                                             </strong>
                                         </li>
- -->
+                                         -->
                                         <li>Service:
                                             <strong><a href="http://startbootstrap.com">{{article.service}}</a>
                                             </strong>
@@ -203,6 +214,4 @@
     {% endif %}
 
     <!-- Portfolio Modals -->
-
-
 {% endblock %}

@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import datetime
 
 AUTHOR = 'Sammy Ramdas'
-SITENAME = "Mark's Media Production"
+SITENAME = "Marks Media"
 SITESUBTITLE = 'This will be the tag line'
 SITEURL = ''
+
+YEAR = datetime.datetime.today().year
 
 THEME = 'theme'
 THEME_STATIC_DIR = 'static'
@@ -14,7 +17,7 @@ STATIC_PATHS = ['images', 'mail', 'js', 'css', 'fonts']
 EXTRA_PATH_METADATA = {
     'static/images/portfolio': {'path': 'images/portfolio'},
 }
-TIMEZONE = 'America/Phoenix'
+TIMEZONE = 'Africa/nairobi'
 
 DEFAULT_LANG = 'en'
 BOOTSTRAP_FILE = 'bootstrap.min.css'
@@ -31,16 +34,12 @@ SCRIPTS = [
     'freeagent.js'
 ]
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-
 DIRECT_TEMPLATES = ['index']
 
 # Top Menu Links
 NAVLINKS = (
     ('#page-top', ''),
+    ('#services', 'Services'),
     ('#portfolio', 'Portfolio'),
     ('#about', 'About'),
     ('#contact', 'Contact')
@@ -48,8 +47,6 @@ NAVLINKS = (
 
 # Portfolio Name
 PORTFOLIO = 'Portfolio'
-
-
 
 #Contact form fields sorted by: label, input_type, id, required_validation_,msg
 CONTACT_FIELDS = (

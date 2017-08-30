@@ -377,3 +377,6 @@ footer .footer-below {
   background-image: url('/static/images/header-bg.jpg');
   background-size: cover;
 }
+.portfolio-caption {
+  text-align: center;
+}
