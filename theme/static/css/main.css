@@ -377,6 +377,11 @@ footer .footer-below {
   background-image: url('/static/images/header-bg.jpg');
   background-size: cover;
 }
+.navbar-brand.mod-nav {
+  color: #fed136;
+  font-family: 'Pacifico', cursive;
+  text-transform: none;
+}
 .portfolio-caption {
   text-align: center;
 }
