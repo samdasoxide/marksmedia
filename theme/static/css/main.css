@@ -372,11 +372,23 @@ footer .footer-below {
   /* Safari and Chrome */
   z-index: 1052;
 }
+.btn.btn-default.mod-modal {
+  background-color: #fed136;
+  border-color: transparent;
+  font-size: 18px;
+}
 /* Header styles */
 .header {
   background-image: url('/static/images/header-bg.jpg');
   background-size: cover;
 }
+.navbar-shrink.mod-nav {
+  background: #170f00;
+}
+/*
+.navbar-default.mod-nav {
+    background: transparent;
+}*/
 .navbar-brand.mod-nav {
   color: #fed136;
   font-family: 'Pacifico', cursive;
@@ -384,4 +396,7 @@ footer .footer-below {
 }
 .portfolio-caption {
   text-align: center;
+}
+.section-icon {
+  color: #fed136;
 }

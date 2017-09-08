@@ -53,7 +53,7 @@
                 <div class="intro-text">
                     <span class="name">{{SITENAME}}</span>
                     <hr class="star-light">
-                    <span class="skills">{{SITESUBTITLE}}</span>
+                    <!--<span class="skills">{{SITESUBTITLE}}</span>-->
                 </div>
             </div>
         </div>
@@ -72,9 +72,14 @@
             </div>
             <div class="col-lg-12">
                 {% for item in articles_page.object_list %}
-                    {% if item.type == 'service' %}
-                        <h4>{{ item.title }}</h4>
-                        <p>{{ item.content }}</p>
+                    {% if item.type == "service" %}
+                        <div class="col-md-4 text-center">
+                            <span class="fa-stack fa-4x">
+                              <i class="fa fa-circle fa-stack-2x section-icon"></i>
+                              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4>{{ item.title }}</h4>
+                        </div>
                     {% endif %}
                 {% endfor %}
             </div>
@@ -95,25 +100,27 @@
         <div class="row">
         {% if articles %}
             {% for article in articles_page.object_list %}
-
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal{{loop.index}}" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-plus fa-3x"></i>
+                {% if article.type == "portfolio" %}
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal{{loop.index}}" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://img.youtube.com/vi/{{ article.videoid }}/maxresdefault.jpg" class="img-responsive" alt="{{ article.title }}" width="350" height="250">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>{{ article.title }}</h4>
+                            <!--
+                                 <p class="text-muted">{{ article.type }}</p>
+                            -->
+                            <p class="text-muted">Animation</p>
                         </div>
                     </div>
-                    <img src="http://via.placeholder.com/350x250" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>{{ article.title }}</h4>
-                    <p class="text-muted">{{ article.category }}</p>
-                    <p>{{ article.object_list }}</p>
-                </div>
-            </div>
+                {% endif %}
             {% endfor %}
         {% endif %}
-
         </div>
     </div>
 </section>
@@ -185,25 +192,30 @@
                                 <div class="modal-body">
                                     <h2>{{article.title}}</h2>
                                     <hr class="star-primary">
-                                    <img src="http://via.placeholder.com/350x250" class="img-responsive img-centered" alt="">
+                                    <img src="https://img.youtube.com/vi/{{ article.videoid }}/maxresdefault.jpg" class="img-responsive img-centered" alt="">
                                     <p>{{article.content}}</p>
+                                    <a href="https://www.youtube.com/watch?v={{ article.videoid }}" target="_blank" class="btn btn-default mod-modal"><i class="fa fa-eye"> Watch</i></a>
+                                    <!--
                                     <ul class="list-inline item-details">
                                         <li>Client:
-                                            <strong><a href="{{article.client_link}}">{{article.client}}</a>
+                                            <strong><a href="#">{{article.client}}</a>
                                             </strong>
                                         </li>
-                                        <!--
+
                                         <li>Date:
-                                            <strong><a href="http://startbootstrap.com">{{article.date}}</a>
+                                            <strong><a href="#">{{article.date}}</a>
                                             </strong>
                                         </li>
-                                         -->
+
                                         <li>Service:
-                                            <strong><a href="http://startbootstrap.com">{{article.service}}</a>
+                                            <strong><a href="#">{{article.service}}</a>
                                             </strong>
                                         </li>
                                     </ul>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                    -->
+                                    <br>
+                                    <br>
+                                    <button type="button" class="btn btn-default btn-lg" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                                 </div>
                             </div>
                         </div>
