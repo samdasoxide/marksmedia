@@ -8,7 +8,6 @@ SITENAME = "Marks Media"
 SITESUBTITLE = 'This will be the tag line'
 SITEURL = ''
 
-YEAR = datetime.datetime.today().year
 
 THEME = 'theme'
 THEME_STATIC_DIR = 'static'
@@ -18,7 +17,12 @@ EXTRA_PATH_METADATA = {
     'static/images/portfolio': {'path': 'images/portfolio'},
 }
 
+# Date Settings
 TIMEZONE = 'Africa/Nairobi'
+DEFAULT_DATE = 'fs'
+YEAR = datetime.datetime.today().year
+
+USE_FOLDER_AS_CATEGORY = False
 
 DEFAULT_LANG = 'en'
 BOOTSTRAP_FILE = 'bootstrap.min.css'
@@ -88,4 +92,4 @@ ABOUT_RIGHT = '''
     If you can imagine it, we can create it.</p>
 '''
 # Center
-ABOUT_CENTER = '<a href="#" target="_blank" class="btn btn-lg btn-outline"><i class="fa fa-youtube"> Go to my YouTube</i> </a>'
+ABOUT_CENTER = '<a href="#" target="_blank" class="btn btn-lg btn-outline"><i class="fa fa-youtube"> Go to my YouTube</i></a>'
