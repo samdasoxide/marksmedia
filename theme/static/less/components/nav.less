@@ -1,14 +1,22 @@
+/*
 .navbar-shrink.mod-nav {
     background: @nero;
 }
 
-/*
 .navbar-default.mod-nav {
     background: transparent;
 }*/
 
 .navbar-brand.mod-nav {
-    color: @sunglow;
-    font-family: 'Pacifico', cursive;
-    text-transform: none;
+  color: @sunglow;
+  font-family: 'Pacifico', cursive;
+  text-transform: none;
+}
+
+.navbar-default .navbar-nav {
+	.active {
+		a {
+			border-radius: 4px;
+		}
+	}
 }

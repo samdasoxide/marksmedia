@@ -382,10 +382,11 @@ footer .footer-below {
   background-image: url('/static/images/header-bg.jpg');
   background-size: cover;
 }
-.navbar-shrink.mod-nav {
-  background: #170f00;
-}
 /*
+.navbar-shrink.mod-nav {
+    background: @nero;
+}
+
 .navbar-default.mod-nav {
     background: transparent;
 }*/
@@ -393,6 +394,9 @@ footer .footer-below {
   color: #fed136;
   font-family: 'Pacifico', cursive;
   text-transform: none;
+}
+.navbar-default .navbar-nav .active a {
+  border-radius: 4px;
 }
 .portfolio-caption {
   text-align: center;
