@@ -63,30 +63,6 @@
 {% endblock %}
 
 {% block grid %}
-<section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Service</h2>
-                <hr class="star-primary">
-            </div>
-            <div class="col-lg-12">
-                {% for item in articles_page.object_list %}
-                    {% if item.type == "service" %}
-                        <div class="col-md-4 text-center">
-                            <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x section-icon"></i>
-                              <i class="fa fa-{{ item.icon }} fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4>{{ item.title }}</h4>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
     <div class="container">
@@ -121,6 +97,30 @@
                 {% endif %}
             {% endfor %}
         {% endif %}
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Service</h2>
+                <hr class="star-primary">
+            </div>
+            <div class="col-lg-12">
+                {% for item in articles_page.object_list %}
+                    {% if item.type == "service" %}
+                        <div class="col-md-4 text-center">
+                            <span class="fa-stack fa-4x">
+                              <i class="fa fa-circle fa-stack-2x section-icon"></i>
+                              <i class="fa fa-{{ item.icon }} fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4>{{ item.title }}</h4>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>
