@@ -44,9 +44,9 @@ DIRECT_TEMPLATES = ['index']
 # Top Menu Links
 NAVLINKS = (
     ('#page-top', ''),
-    ('#services', 'Services'),
-    ('#portfolio', 'Portfolio'),
     ('#about', 'About'),
+    ('#portfolio', 'Portfolio'),
+    ('#services', 'Services'),
     ('#contact', 'Contact')
 )
 
