@@ -168,7 +168,7 @@ section {
 
 section.success {
 	background: @brand-success;
-	color: white;
+	color: @mirage;
 }
 
 @media(max-width:767px) {
@@ -235,9 +235,9 @@ section.success {
 }
 
 .btn-outline {
-	color: white;
+	color: @mirage;
 	font-size: 20px;
-	border: solid 2px white;
+	border: solid 2px @mirage;
 	background: transparent;
 	transition: all 0.3s ease-in-out;
 	margin-top: 15px;
@@ -246,8 +246,8 @@ section.success {
 	&:active,
 	&.active {
 		color: @brand-success;
-		background: white;
-		border: solid 2px white;
+		background: @mirage;
+		border: solid 2px @mirage;
 	}
 }
 
@@ -327,6 +327,7 @@ footer {
 }
 
 .btn-social {
+	color: white;
 	display: inline-block;
 	height: 50px;
 	width: 50px;

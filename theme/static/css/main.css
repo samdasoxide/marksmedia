@@ -144,7 +144,7 @@ section h2 {
 }
 section.success {
   background: #fed136;
-  color: white;
+  color: #1a242f;
 }
 @media (max-width: 767px) {
   section {
@@ -203,9 +203,9 @@ section.success {
   }
 }
 .btn-outline {
-  color: white;
+  color: #1a242f;
   font-size: 20px;
-  border: solid 2px white;
+  border: solid 2px #1a242f;
   background: transparent;
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
@@ -215,8 +215,8 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
   color: #fed136;
-  background: white;
-  border: solid 2px white;
+  background: #1a242f;
+  border: solid 2px #1a242f;
 }
 .floating-label-form-group {
   position: relative;
@@ -285,6 +285,7 @@ footer .footer-below {
   background-color: #000000;
 }
 .btn-social {
+  color: white;
   display: inline-block;
   height: 50px;
   width: 50px;
