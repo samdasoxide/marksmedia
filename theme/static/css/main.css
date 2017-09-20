@@ -63,7 +63,6 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #fed136;
   color: white;
 }
 header .container {
@@ -73,6 +72,9 @@ header .container {
 header img {
   display: block;
   margin: 0 auto 20px;
+}
+header .intro-text {
+  padding: 200px 0 300px 0;
 }
 header .intro-text .name {
   display: block;
@@ -380,7 +382,7 @@ footer .footer-below {
 }
 /* Header styles */
 .header {
-  background-image: url('/static/images/header-bg.jpg');
+  background-image: url('/static/images/header-bg.png');
   background-size: cover;
 }
 /*
