@@ -46,6 +46,7 @@ NAVLINKS = (
     ('#page-top', ''),
     ('#about', 'About'),
     ('#portfolio', 'Portfolio'),
+    ('#elimu-tales', 'Elimu Tales'),
     ('#services', 'Services'),
     ('#contact', 'Contact')
 )
