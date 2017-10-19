@@ -282,6 +282,10 @@ footer .footer-above {
 footer .footer-col {
   margin-bottom: 50px;
 }
+footer .footer-col address {
+  margin-left: 30%;
+  text-align: left;
+}
 footer .footer-below {
   padding: 25px 0;
   background-color: #000000;
@@ -379,6 +383,12 @@ footer .footer-below {
   background-color: #fed136;
   border-color: transparent;
   font-size: 18px;
+}
+.contact h3 {
+  margin-bottom: 60px;
+}
+.contact h4 {
+  margin-bottom: 30px;
 }
 /* Header styles */
 .header {
