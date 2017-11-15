@@ -78,7 +78,7 @@
             {% for article in articles_page.object_list %}
                 {% if article.type == "portfolio" %}
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal{{loop.index}}" class="portfolio-link" data-toggle="modal">
+                        <a href="https://www.youtube.com/watch?v={{ article.videoid }}" target="_blank" class="portfolio-link" >
                             <div class="caption">
                                 <div class="caption-content">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -213,6 +213,8 @@
     </section>
 {% endblock %}
 
+
+<!--Will be added later when needed-->
 {% block modals %}
     {% if articles %}
         {% for article in articles_page.object_list %}
