@@ -1,4 +1,4 @@
 Title: Immune Jingle Song
-type: porfolio
+type: portfolio
 videoid: sv3Vxcw9YxI
 sortorder: 0
