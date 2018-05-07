@@ -93,4 +93,4 @@ ABOUT_RIGHT = '''
     If you can imagine it, we can create it.</p>
 '''
 # Center
-ABOUT_CENTER = '<a href="#" target="_blank" class="btn btn-lg btn-outline"><i class="fa fa-youtube"> Go to my YouTube</i></a>'
+ABOUT_CENTER = '<a href="https://www.youtube.com/channel/UCd66EXJ4DrZHm_6uqiVm8pw" target="_blank" class="btn btn-lg btn-outline"><i class="fa fa-youtube"> Go to my YouTube</i></a>'
