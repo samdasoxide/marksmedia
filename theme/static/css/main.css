@@ -246,14 +246,14 @@ section.success {
   top: 2em;
   margin: 0;
   font-size: 0.85em;
-  line-height: 1.764705882em;
+  line-height: 1.76470588em;
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
-  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
-  -moz-transition: top 0.3s ease,opacity 0.3s ease;
-  -ms-transition: top 0.3s ease,opacity 0.3s ease;
-  transition: top 0.3s ease,opacity 0.3s ease;
+  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+  -moz-transition: top 0.3s ease, opacity 0.3s ease;
+  -ms-transition: top 0.3s ease, opacity 0.3s ease;
+  transition: top 0.3s ease, opacity 0.3s ease;
 }
 .floating-label-form-group::not(:first-child) {
   padding-left: 14px;
@@ -411,9 +411,21 @@ footer .footer-below {
 .navbar-default .navbar-nav .active a {
   border-radius: 4px;
 }
+.navbar-logo {
+  padding: 0;
+}
+.navbar-logo img {
+  width: 100px;
+}
 .portfolio-caption {
   text-align: center;
 }
 .section-icon {
   color: #fed136;
+}
+.partner-logo {
+  width: 150px;
+}
+.partner-section {
+  margin-top: 40px;
 }
